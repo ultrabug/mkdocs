@@ -106,7 +106,8 @@ jobs:
           python setup.py extract_messages -t readthedocs
           git diff --ignore-matching-lines 'POT-Creation-Date' --ignore-matching-lines 'Project-Id-Version' --exit-code
         shell: bash
-      - uses: jitterbit/get-changed-files@v1
+      - id: files
+        uses: jitterbit/get-changed-files@v1
       - name: Check if Portable Object translation files should be updated on mkdocs version change
         run: |
           for locale in $(ls mkdocs/themes/mkdocs/locales/); do python setup.py update_catalog -t mkdocs -l ${locale}; done
