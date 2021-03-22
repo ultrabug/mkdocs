@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MkDocs 1.2.dev1\n"
 "Report-Msgid-Bugs-To: github@mkdocs.org\n"
-"POT-Creation-Date: 2021-03-14 18:09+0100\n"
+"POT-Creation-Date: 2021-03-22 21:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,6 @@ msgid "Edit on %(repo_name)s"
 msgstr ""
 
 #: mkdocs/themes/readthedocs/breadcrumbs.html:33
-#: mkdocs/themes/readthedocs/footer.html:7
 #: mkdocs/themes/readthedocs/versions.html:14
 msgid "Next"
 msgstr ""
@@ -40,6 +39,10 @@ msgstr ""
 #: mkdocs/themes/readthedocs/footer.html:10
 #: mkdocs/themes/readthedocs/versions.html:11
 msgid "Previous"
+msgstr ""
+
+#: mkdocs/themes/readthedocs/footer.html:7
+msgid "Next with test"
 msgstr ""
 
 #: mkdocs/themes/readthedocs/footer.html:25
