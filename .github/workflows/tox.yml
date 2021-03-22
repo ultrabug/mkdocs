@@ -110,5 +110,5 @@ jobs:
         run: |
           for locale in $(ls mkdocs/themes/mkdocs/locales/); do python setup.py update_catalog -t mkdocs -l ${locale}; done
           for locale in $(ls mkdocs/themes/readthedocs/locales/); do python setup.py update_catalog -t readthedocs -l ${locale}; done
-          git diff --quiet --exit-code mkdocs/__init__.py || git diff --ignore-matching-lines 'POT-Creation-Date' --ignore-matching-lines 'Project-Id-Versio' --exit-code
+          git diff --quiet --exit-code ${GITHUB_SHA} mkdocs/__init__.py || git diff --ignore-matching-lines 'POT-Creation-Date' --ignore-matching-lines 'Project-Id-Version' --exit-code
         shell: bash
