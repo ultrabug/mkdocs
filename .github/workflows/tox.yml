@@ -115,7 +115,7 @@ jobs:
           for changed_file in ${{ steps.files.outputs.all }}; do
             # echo "inspecting changed file: ${changed_file}";
             if [[ "${changed_file}" == "mkdocs/__init__.py" ]]; then
-              # echo "mkdocs version changed!";
+              echo "mkdocs version changed!";
               git diff -G "msgid" --exit-code || exit 1
               git diff -G "msgstr" --exit-code || exit 2
             fi
